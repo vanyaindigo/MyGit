@@ -7,7 +7,7 @@
 
 <AnchorPane minWidth="220.0" prefHeight="800.0" prefWidth="600.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chat.chatController">
       <HBox alignment="BOTTOM_CENTER" layoutX="8.0" layoutY="706.0" minWidth="110.0" prefHeight="86.0" spacing="6.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="8.0">
-            <TextArea id="textField" fx:id="textField" maxHeight="86.0" minHeight="86.0" minWidth="110.0" prefHeight="86.0" prefWidth="482.0" promptText="Введите текст..." HBox.hgrow="ALWAYS">
+            <TextArea id="textField" fx:id="textField" maxHeight="86.0" minHeight="86.0" minWidth="110.0" onKeyPressed="#sendMsgEnter" prefHeight="86.0" prefWidth="482.0" promptText="Введите текст..." HBox.hgrow="ALWAYS">
               </TextArea>
             <Button id="sendButton" fx:id="sendButton" maxWidth="86.0" minWidth="86.0" mnemonicParsing="false" onAction="#sendMsg" prefHeight="86.0" prefWidth="86.0" text="Send">
                </Button>
