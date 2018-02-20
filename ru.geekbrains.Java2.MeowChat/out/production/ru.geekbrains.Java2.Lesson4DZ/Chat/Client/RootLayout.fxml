@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="840.0" prefWidth="674.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Chat.Client.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Подключиться">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#getConnect" text="Подключиться к серверу" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Выход" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Приват">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#privateMessages" text="Окно приватных сообщений" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" onAction="#administer" text="Админка">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Администрирование" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Помощь">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="О Meow chat" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
